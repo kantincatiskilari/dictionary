@@ -1,0 +1,61 @@
+.register{
+    display: flex;
+    color: white;
+}
+
+
+.registerWrapper{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 70%;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registerForm label{
+    display: flex;
+    gap: 20px;
+}
+
+.registerForm .registerInput{
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 230px;
+}
+
+.formSubmit{
+    border: none;
+    color: white;
+    background: rgb(0, 195, 255);
+    padding: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.formSubmit:disabled{
+    background-color: gray;
+    cursor:no-drop
+};
+
+.redirectSignIn{
+    padding: 3px 10px;
+    background: rgb(0, 195, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.registerError, .submitErr{
+    font-size: 13px;
+    color: red;
+}

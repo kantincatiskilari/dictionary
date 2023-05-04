@@ -1,0 +1,24 @@
+.singleEntry{
+    display: flex;
+    gap: 30px;
+}
+
+.singleeEntryContainer{
+    margin-top: 60px;
+}
+
+.entryButton{
+    margin-top: 30px;
+    width: 700px;
+    padding: 3px 0;
+    cursor: pointer;
+    color: #ccc; 
+    border: 1px solid white;
+    font-size: 17px;
+    transition: .3s ease all;
+}
+
+.entryButton:hover{
+    background: black;
+    color: rgb(0, 195, 255);
+}

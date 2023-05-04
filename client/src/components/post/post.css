@@ -1,0 +1,167 @@
+.postWrapper{
+    margin-right:250px;
+    width: 700px;
+    color: white;
+}
+
+.postHeader{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.postDeleteIcon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: gray;
+    transition: .3s ease;
+    margin-right: 5px;
+}
+
+.postDeleteIcon:hover{
+    background: local;
+}
+
+.postDeleteIcon svg{
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+.deleteTab{
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px 9px;
+}
+
+.deleteMsg{
+    color: rgb(187, 17, 17);
+    font-size: 14px;
+}
+
+.deleteButtons{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.deleteButton{
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.deleteButton.confirm{
+    background: rgb(0, 195, 255);
+}
+
+.deleteButton.cancel{
+    background: rgb(0, 195, 255);
+}
+
+.postInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postLike{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.postLike svg{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.postLike span{
+    cursor: pointer;
+}
+
+.postLike span:hover{
+
+    text-decoration: underline;
+}
+
+.postLike svg:hover{
+    color: rgb(0, 195, 255);
+}
+
+.postLike svg.liked{
+    color: rgb(0, 195, 255);
+}
+
+.likedUsersWrapper{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    display: none;
+    width: 100px;
+    height: fit-content;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.likedUsers{
+    cursor: pointer;
+    font-size: 14px;
+}
+.likedUsers:hover{
+    text-decoration: underline;
+}
+
+.postDate{
+    cursor: pointer;
+}
+
+.postDate:hover{
+    text-decoration: underline;
+}
+
+.postUserAvatar{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+
+.postUser{
+    width: 150px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.postUsername{
+    cursor: pointer;
+    padding: 3px 0;
+    color: rgb(0, 195, 255);
+}
+
+.postUsername:hover{
+    text-decoration: underline;
+}

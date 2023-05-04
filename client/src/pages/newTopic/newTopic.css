@@ -1,0 +1,21 @@
+.newTopic{
+    display: flex;
+    gap: 30px;
+}
+
+.newTopicTitle {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.topicNotFound{
+    color: lightgray;
+}
+
+.newEntry{
+    width: 690px;
+    background: #474747;
+}

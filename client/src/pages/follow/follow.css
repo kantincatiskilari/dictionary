@@ -1,0 +1,79 @@
+.follow{
+    display: flex;
+    color: lightgray;
+}
+
+.followContainer{
+    margin: 40px;
+}
+
+.followPageUser{
+    width: 455px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.followPageUsername{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.followPageStatus{
+    font-weight: 500;
+}
+
+.followPageProfile{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.followPageProfileAvatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.followPageProfileName{
+    width: 100px;
+}
+
+.followPageProfileName{
+    color: lightgray;
+    cursor: pointer;
+}
+
+.followPageProfileName:hover{
+    text-decoration: underline;
+}
+
+.followPageButton.active{
+    border: none;
+    color: white;
+    background: rgb(0, 195, 255);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.followPageButton{
+    float: right;
+    border: none;
+    color: white;
+    border: 2px solid gray;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-left: 210px;
+    cursor: pointer;
+}
+
+.followPageButton.unfollow{
+    background: rgb(0, 195, 255);
+    border: none;
+}

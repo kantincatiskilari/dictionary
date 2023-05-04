@@ -1,0 +1,57 @@
+.login{
+    display: flex;
+    color: white;
+}
+
+
+.loginWrapper{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 70%;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loginForm label{
+    display: flex;
+    gap: 20px;
+}
+
+.loginForm .loginInput{
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 230px;
+}
+
+.loginSubmit{
+    border: none;
+    color: white;
+    background: rgb(0, 195, 255);
+    padding: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.loginWrapper .formCheckLabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.loginError,.submitErr{
+    font-size: 13px;
+    color: red;
+}
+

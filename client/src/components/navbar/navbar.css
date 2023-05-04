@@ -1,0 +1,132 @@
+.navbar{
+    color: #fff;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 999;
+    border-bottom: 1px solid black;
+}
+
+.navbarContainers{
+    margin: 0 250px;
+    padding: 11px 0;
+}
+
+.navbarTopContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.left .logo svg{
+    color: rgb(0, 195, 255) !important;
+}
+
+.center{
+    position: relative;
+}
+
+.searchForm{
+    display: flex;
+    align-items: center;
+}
+
+.center .searchInput{
+    background-color: #fff;
+    width: 330px;
+    padding: 3px 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgb(0, 195, 255);
+    outline: none;
+}
+
+.center .searchButton{
+    width: 27px;
+    height: 27px;
+    background-color:rgb(0, 195, 255) !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.center .searchButton svg{
+    background: transparent;
+}
+
+.searchResults{
+    position: absolute;
+    top: 35px;
+    width: 330px;
+    height: fit-content;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+
+.searchResults .result{
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.searchResults .result:hover{
+    color: gray;
+}
+
+.right{
+    display: flex;
+}
+
+.right .accountList{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.right .accountList .accountListItem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 300;
+}
+
+.right .accountList .accountListItem svg{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.navbarBottomContainer{
+    margin-top: 20px;
+}
+
+.navbarBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navbarBottomItem{
+    cursor: pointer;
+    font-weight: 400;
+    background: transparent;
+    padding-bottom: 2px;
+}
+
+.navbarBottomItem:hover{
+    color: rgb(165, 165, 165);
+}
+
+.navbarBottomItem.active{
+    border-bottom: 5px solid rgb(0, 195, 255);
+}
