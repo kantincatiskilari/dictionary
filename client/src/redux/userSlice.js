@@ -10,9 +10,9 @@ export const userSlice = createSlice({
     name: 'user',
     initialState,
     reducers: {
-        loginStart: (state) => {
-            state.isPending = true
-        },
+        loginStart: (state) => ({
+            isPending: true
+        }),
         loginSuccess: (state,action) => ({
             isPending : false,
             user : action.payload,
