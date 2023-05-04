@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Post from "../../components/post/Post";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
-import Loading from 'react-loading-animation';
+import Loading from "react-loading-animation";
 
 export default function Home({ type }) {
   const [loading, setLoading] = useState(true);
@@ -36,9 +36,13 @@ export default function Home({ type }) {
         <title>home - paw dictionary</title>
       </Helmet>
       <Sidebar />
-      {loading && <div className="loading"><Loading /></div> }
+      {loading && (
+        <div className="loading">
+          <Loading />
+        </div>
+      )}
       <div className="topicWrapper">
-        {post.length > 0 &&
+        {post?.length > 0 &&
           post?.map((entry, index) => (
             <div className="randomEntryWrapper" key={entry.sequence}>
               <Link className="link" to={"/topics/" + entry.postId}>
